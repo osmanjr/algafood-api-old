@@ -1,6 +1,7 @@
 set foreign_key_checks = 0;
 
 delete from cidade;
+delete from estado;
 delete from cozinha;
 delete from forma_pagamento;
 delete from grupo;
@@ -15,6 +16,7 @@ delete from usuario_grupo;
 set foreign_key_checks = 1;
 
 alter table cidade auto_increment = 1;
+alter table estado auto_increment = 1;
 alter table cozinha auto_increment = 1;
 alter table forma_pagamento auto_increment = 1;
 alter table grupo auto_increment = 1;
