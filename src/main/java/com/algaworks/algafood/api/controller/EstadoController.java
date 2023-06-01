@@ -58,6 +58,7 @@ public class EstadoController {
 	}
 	
 	@DeleteMapping("/{estadoId}")
+	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void remover(@PathVariable Long estadoId) {
 		cadastroEstado.excluir(estadoId);	
 	}
